@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            border: 2px solid pink;
+            padding: 20px;
+            border-radius: 10px;
+            width: 320px;
+            text-align: center;
+        }
+
+        h1 {
+            color: pink;
+
+
+        }
+
+        h3 {
+            color: pink;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        button {
+            background-color: pink;
+            color: black;
+            padding: 10px;
+            width: 95%;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 15px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Grade Calculator</h1>
+
+        <input type="text" id="fname" placeholder="First Name">
+        <input type="text" id="lname" placeholder="Last Name">
+        <h3> Enter your grades:</</h3>
+        <input type="number" id="science" placeholder="Science">
+        <input type="number" id="english" placeholder="English">
+        <input type="number" id="ICT" placeholder="ICT">
+        <input type="number" id="math" placeholder="Math">
+        <input type="number" id="filipino" placeholder="Filipino">
+        <input type="number" id="PE" placeholder="PE">
+
+        <button py-click="calculate_gwa">CALCULATE GWA</button>
+
+        <div id="output"></div>
+    </div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
